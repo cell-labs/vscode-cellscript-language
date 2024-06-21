@@ -3,7 +3,7 @@
    "name": "SVA - Light Default Highlights",
    "tokenColors": [{
          "name":"visibility: public, memory, ..",
-         "scope":"storage.type.modifier.keyword.solidity",
+         "scope":"storage.type.modifier.keyword.cellscript",
          "settings":{
             "foreground":"#2a9b0e",
             "fontStyle":"underline"
@@ -11,7 +11,7 @@
       },
       {
          "name":"external visibility",
-         "scope":"storage.type.modifier.keyword.extendedscope.solidity",
+         "scope":"storage.type.modifier.keyword.extendedscope.cellscript",
          "settings":{
             "foreground":"#d65353",
             "fontStyle":"underline"
@@ -19,7 +19,7 @@
       },
       {
          "name":"emit, new, delete",
-         "scope":"keyword.control.solidity",
+         "scope":"keyword.control.cellscript",
          "settings":{
             "foreground":"#c200b2ad",
             "fontStyle":"bold"
@@ -27,7 +27,7 @@
       },
       {
          "name":"function contract",
-         "scope":"entity.name.function.solidity",
+         "scope":"entity.name.function.cellscript",
          "settings":{
             //"foreground":"#fae674d7",
             "fontStyle":""
@@ -35,7 +35,7 @@
       },
       {
          "name":"transaction vars (inconclusive)",
-         "scope":"variable.language.transaction.solidity",
+         "scope":"variable.language.transaction.cellscript",
          "settings":{
             "foreground":"#e4a13c",
             "fontStyle":"bold underline"
@@ -43,7 +43,7 @@
       },
       {
          "name":"transaction vars (sec)",
-         "scope":"variable.language.transaction.security.solidity",
+         "scope":"variable.language.transaction.security.cellscript",
          "settings":{
             "foreground":"#e05959",
             "fontStyle":"bold underline"
@@ -51,7 +51,7 @@
       },
       {
          "name":"transaction function (sec)",
-         "scope":"support.function.transaction.security.solidity",
+         "scope":"support.function.transaction.security.cellscript",
          "settings":{
             "foreground":"#e05959",
             "fontStyle":"bold underline"
@@ -59,7 +59,7 @@
       },
       {
          "name":"transaction function (safe)",
-         "scope":"support.function.transaction.solidity",
+         "scope":"support.function.transaction.cellscript",
          "settings":{
             "foreground":"#e4a13c",
             "fontStyle":"bold"
@@ -67,7 +67,7 @@
       },
       {
          "name":"assembly",
-         "scope":"keyword.control.assembly.solidity",
+         "scope":"keyword.control.assembly.cellscript",
          "settings":{
             "foreground":"#e05959",
             "fontStyle":"bold underline"
@@ -75,7 +75,7 @@
       },
       {
          "name":"unchecked",
-         "scope":"keyword.control.unchecked.solidity",
+         "scope":"keyword.control.unchecked.cellscript",
          "settings":{
             "foreground":"#e05959",
             "fontStyle":"bold underline"
@@ -83,7 +83,7 @@
       },
       {
          "name":"let",
-         "scope":"keyword.control.let.solidity",
+         "scope":"keyword.control.let.cellscript",
          "settings":{
             "foreground":"#e05959",
             "fontStyle":"bold underline"
@@ -91,7 +91,7 @@
       },
       {
          "name":"todos and dev notes",
-         "scope":"keyword.comment.todo.solidity",
+         "scope":"keyword.comment.todo.cellscript",
          "settings":{
             "foreground":"#e05959",
             "fontStyle":"bold underline italic"
@@ -99,7 +99,7 @@
       },
       {
          "name":"assert/require",
-         "scope":"keyword.control.exceptions.solidity",
+         "scope":"keyword.control.exceptions.cellscript",
          "settings":{
             "foreground":"#2a9b0e",
             "fontStyle":"underline"
@@ -107,28 +107,28 @@
       },
       {
          "name":"modifier function",
-         "scope":"entity.name.modifier.solidity",
+         "scope":"entity.name.modifier.cellscript",
          "settings":{
             "foreground":"#2a9b0e",
          }
       },
       {
          "name":"this",
-         "scope":"variable.language.this.solidity",
+         "scope":"variable.language.this.cellscript",
          "settings":{
             "fontStyle":"bold underline"
          }
       },
       {
          "name":"super",
-         "scope":"variable.language.super.solidity",
+         "scope":"variable.language.super.cellscript",
          "settings":{
             "fontStyle":"bold underline"
          }
       },
       {
          "name":"selfdestruct",
-         "scope":"keyword.control.contract.solidity",
+         "scope":"keyword.control.contract.cellscript",
          "settings":{
             "foreground":"#e05959",
             "fontStyle":"bold underline"
@@ -136,14 +136,14 @@
       },
       {
          "name":"builtin math",
-         "scope":"support.function.math.solidity",
+         "scope":"support.function.math.cellscript",
          "settings":{
             "fontStyle":"bold italic"
          }
       },
       {
          "name":"arithm",
-         "scope":"keyword.operator.arithmetic.solidity",
+         "scope":"keyword.operator.arithmetic.cellscript",
          "settings":{
             "foreground":"#2654d2",
             "fontStyle":"bold"
@@ -151,7 +151,7 @@
       },
       {
          "name":"assign",
-         "scope":"keyword.operator.assignment.solidity",
+         "scope":"keyword.operator.assignment.cellscript",
          "settings":{
             "foreground":"#6bac04",
             "fontStyle":"bold"
@@ -159,7 +159,7 @@
       },
       {
          "name":"logic",
-         "scope":"keyword.operator.logic.solidity",
+         "scope":"keyword.operator.logic.cellscript",
          "settings":{
             "foreground":"#e09c43",
             "fontStyle":"bold"
@@ -167,14 +167,14 @@
       },
       {
          "name":"using",
-         "scope":"keyword.control.using.solidity",
+         "scope":"keyword.control.using.cellscript",
          "settings":{
             "fontStyle":"underline"
          }
       },
       {
          "name":"import",
-         "scope":"keyword.control.import.solidity",
+         "scope":"keyword.control.import.cellscript",
          "settings":{
             //"foreground":"#fc8a56a6",
             "fontStyle":"bold italic"
@@ -182,7 +182,7 @@
       },
       {
          "name":"pragma",
-         "scope":"keyword.control.pragma.solidity",
+         "scope":"keyword.control.pragma.cellscript",
          "settings":{
             //"foreground":"#fc8a56a6",
             "fontStyle":"bold italic"
@@ -190,14 +190,14 @@
       },
       {
          "name":"underscore placeholder",
-         "scope":"constant.other.underscore.solidity",
+         "scope":"constant.other.underscore.cellscript",
          "settings":{
             "fontStyle":"bold underline"
          }
       },
       {
          "name":"const time",
-         "scope":"constant.language.time.solidity",
+         "scope":"constant.language.time.cellscript",
          "settings":{
             "foreground":"#d68661ea",
             "fontStyle":"underline"
@@ -205,7 +205,7 @@
       },
       {
          "name":"const currency",
-         "scope":"constant.language.currency.solidity",
+         "scope":"constant.language.currency.cellscript",
          "settings":{
             "foreground":"#d68661ea",
             "fontStyle":"underline"
@@ -213,65 +213,57 @@
       },
       {
          "name":"contract",
-         "scope":"storage.type.contract.solidity",
+         "scope":"storage.type.contract.cellscript",
          "settings":{
             "fontStyle":"italic"
          }
       },
       {
          "name":"is",
-         "scope":"storage.modifier.is.solidity",
+         "scope":"storage.modifier.is.cellscript",
          "settings":{
             "fontStyle":"italic"
          }
       },
       {
          "name":"interface",
-         "scope":"storage.type.interface.solidity",
+         "scope":"storage.type.interface.cellscript",
          "settings":{
             "fontStyle":"italic"
          }
       },
       {
-         "name":"library",
-         "scope":"storage.type.library.solidity",
+         "name":"package",
+         "scope":"storage.type.package.cellscript",
          "settings":{
             "fontStyle":"italic"
          }
       },
       {
          "name":"struct",
-         "scope":"storage.type.struct.solidity",
+         "scope":"storage.type.struct.cellscript",
          "settings":{
             "fontStyle":"italic"
          }
       },
       {
          "name":"event",
-         "scope":"storage.type.event.solidity",
+         "scope":"storage.type.event.cellscript",
          "settings":{
             "fontStyle":"italic"
          }
       },
       {
          "name":"constructor",
-         "scope":"storage.type.constructor.solidity",
+         "scope":"storage.type.constructor.cellscript",
          "settings":{
             "foreground":"#268BD2",
             "fontStyle":"bold underline"
          }
       },
       {
-         "name":"fallback",
-         "scope":"storage.type.function.fallback.solidity",
-         "settings":{
-            "foreground":"#268BD2",
-            "fontStyle":"underline bold"
-         }
-      },
-      {
          "name":"receive",
-         "scope":"storage.type.function.receive.solidity",
+         "scope":"storage.type.function.receive.cellscript",
          "settings":{
             "foreground":"#268BD2",
             "fontStyle":"underline bold"
@@ -279,21 +271,21 @@
       },
       {
          "name":"enum",
-         "scope":"entity.name.type.enum.solidity",
+         "scope":"entity.name.type.enum.cellscript",
          "settings":{
             "fontStyle":"italic"
          }
       },
       {
          "name":"function",
-         "scope":"storage.type.function.solidity",
+         "scope":"storage.type.function.cellscript",
          "settings":{
             "fontStyle":"italic"
          }
       },
       {
          "name":"visibility: public, memory, ..",
-         "scope":"constant.language.ucase.solidity",
+         "scope":"constant.language.ucase.cellscript",
          "settings":{
             "foreground":"#6098c0",
             "fontStyle":"italic"
@@ -301,7 +293,7 @@
       },
       {
          "name":"modifier",
-         "scope":"storage.type.modifier.solidity",
+         "scope":"storage.type.modifier.cellscript",
          "settings":{
             "fontStyle":"italic"
          }
@@ -350,7 +342,7 @@
       },
       {
          "name":"block",
-         "scope":"punctuation.block.solidity",
+         "scope":"punctuation.block.cellscript",
          "settings":{
             "foreground":"#0000008f",
             "fontStyle": "bold"

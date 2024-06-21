@@ -4,26 +4,26 @@
 </sup><br/><br/>
 
 
-# Solidity Language Support, Syntax Highlighting, and Themes for VSCode
+# CellScript Language Support, Syntax Highlighting, and Themes for VSCode
 
-This extension enables solidity code highlighting for VSCode. It **only provides the language support** and themes, no active decoration or functionality. This is mainly to support solidity code highlighting in VSCode Web/github.dev. Go install [Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor) instead if you want the fully blown super amazedazzle extension 🥰.
+This extension enables CellScript code highlighting for VSCode. It **only provides the language support** and themes, no active decoration or functionality. This is mainly to support CellScript code highlighting in VSCode Web/github.dev. Go install [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.cellscript-visual-auditor) instead if you want the fully blown super amazedazzle extension 🥰.
 
 
 
-This used to be inlined into [Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor) and unless you're installing this on VSCode Web you probably want to install [Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor) instead. However, breaking this out into its own extension allows us to be more flexible and provide a some support for VSCode Web /  https://github.dev.
+This used to be inlined into [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.cellscript-visual-auditor) and unless you're installing this on VSCode Web you probably want to install [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.cellscript-visual-auditor) instead. However, breaking this out into its own extension allows us to be more flexible and provide a some support for VSCode Web /  https://github.dev.
 
 What changed?
 
-* [Solidity Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-visual-auditor) now bundles with this extension to provide language support an themes.
+* [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.cellscript-visual-auditor) now bundles with this extension to provide language support an themes.
 * We can now provide minimal language support for VSCode-Web @ https://github.dev/.
 
 
-## Theme: Solidity Visual Developer Light (VSCode)
+## Theme: CellScript Visual Developer Light (VSCode)
 
 <img width="1364" alt="theme_light_vs" src="https://user-images.githubusercontent.com/2865694/61187576-6b1ca500-a673-11e9-8770-ff8b47d716ee.png">
 
 
-## Theme: Solidity Visual Developer Dark
+## Theme: CellScript Visual Developer Dark
 
 **Simple DAO**
 
@@ -34,7 +34,7 @@ What changed?
 ![highlight](https://user-images.githubusercontent.com/2865694/52523502-4bcbb700-2c92-11e9-9ef1-085e3a244cda.png)
 
 
-## Theme: Solidity Visual Developer Solarized Light
+## Theme: CellScript Visual Developer Solarized Light
 
 **Simple DAO**
 

@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to the "vscode-solidity-language" extension will be documented in this file.
+All notable changes to the "vscode-cellscript-language" extension will be documented in this file.
 
 ## v0.0.7
 

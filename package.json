@@ -1,7 +1,7 @@
 {
-    "name": "vscode-solidity-language",
-    "displayName": "Solidity Language & Themes (only)",
-    "description": "Solidity Language Support, Syntax Highlighting, and Themes",
+    "name": "vscode-cellscript-language",
+    "displayName": "CellScript Language & Themes (only)",
+    "description": "CellScript Language Support, Syntax Highlighting, and Themes",
     "publisher": "tintinweb",
     "icon": "images/icon.png",
     "preview": true,
@@ -10,15 +10,15 @@
         "vscode": "^1.60.0"
     },
     "keywords": [
-        "solidity",
+        "cellscript",
         "ethereum",
         "blockchain",
         "security",
         "audit",
         "review",
         "developer",
-        "solidity security",
-        "solidity audit",
+        "cellscript security",
+        "cellscript audit",
         "language",
         "theme"
     ],
@@ -26,11 +26,11 @@
         "Programming Languages"
     ],
     "bugs": {
-        "url": "https://github.com/tintinweb/vscode-solidity-language/issues"
+        "url": "https://github.com/tintinweb/vscode-cellscript-language/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/tintinweb/vscode-solidity-language"
+        "url": "https://github.com/tintinweb/vscode-cellscript-language"
     },
     "scripts": {
         "test": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. --extensionTestsPath=dist/web/test/suite/index.js",
@@ -39,46 +39,46 @@
     "contributes": {
         "languages": [
             {
-                "id": "solidity",
+                "id": "cellscript",
                 "aliases": [
-                    "solidity",
-                    "solidity"
+                    "cellscript",
+                    "cellscript"
                 ],
                 "extensions": [
-                    ".sol"
+                    ".cell"
                 ],
                 "configuration": "./src/language-configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "solidity",
-                "scopeName": "source.solidity.security",
-                "path": "./src/syntaxes/solidity.tmLanguage.json",
+                "language": "cellscript",
+                "scopeName": "source.cellscript.security",
+                "path": "./src/syntaxes/cellscript.tmLanguage.json",
                 "injectTo": [
-                    "source.solidity"
+                    "source.cellscript"
                 ]
             }
         ],
         "themes": [
             {
-                "label": "Solidity Visual Developer Dark",
+                "label": "CellScript Visual Developer Dark",
                 "uiTheme": "vs-dark",
                 "path": "./src/themes/OneDarkAuditor.json"
             },
             {
-                "label": "Solidity Visual Developer Solarized Light",
+                "label": "CellScript Visual Developer Solarized Light",
                 "uiTheme": "vs",
                 "path": "./src/themes/solarized-light-color-theme.json"
             },
             {
-                "label": "Solidity Visual Developer Light (Visual Studio)",
+                "label": "CellScript Visual Developer Light (Visual Studio)",
                 "uiTheme": "vs",
                 "path": "./src/themes/light_vs.json"
             }
         ]
     },
     "devDependencies": {
-        "@vscode/test-web": "^0.0.34"
+        "@vscode/test-web": "^0.0.54"
     }
 }

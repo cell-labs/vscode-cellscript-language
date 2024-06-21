@@ -2,7 +2,7 @@
     "fileTypes": [
         "sol"
     ],
-	"name": "SoliditySec",
+	"name": "CellScriptSec",
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
     "patterns": [
         {
@@ -54,7 +54,7 @@
                 {
                     "begin": "/\\*\\*",
                     "end": "\\*/",
-                    "name": "comment.block.documentation.solidity",
+                    "name": "comment.block.documentation.cellscript",
                     "patterns": [
                         {
                             "include": "#natspec-tags"
@@ -64,7 +64,7 @@
                 {
                     "begin": "///",
                     "end": "$",
-                    "name": "comment.block.documentation.solidity",
+                    "name": "comment.block.documentation.cellscript",
                     "patterns": [
                         {
                             "include": "#natspec-tags"
@@ -141,7 +141,7 @@
             
             "begin": "(?<!tp:)//",
             "end": "$",
-            "name": "comment.line.solidity",
+            "name": "comment.line.cellscript",
             "patterns": [
                 {
                     "include": "#comment-todo"
@@ -151,7 +151,7 @@
         "comment-block": {
             "begin": "/\\*",
             "end": "\\*/",
-            "name": "comment.block.solidity",
+            "name": "comment.block.cellscript",
             "patterns": [
                 {
                     "include": "#comment-todo"
@@ -179,23 +179,23 @@
         },
         "operator-logic": {
             "match": "(==|<(?!<)|<=|>(?!>)|>=|\\&\\&|\\|\\||\\:(?!=)|\\?)",
-            "name": "keyword.operator.logic.solidity"
+            "name": "keyword.operator.logic.cellscript"
         },
         "operator-mapping": {
             "match": "(=>)",
-            "name": "keyword.operator.mapping.solidity"
+            "name": "keyword.operator.mapping.cellscript"
         },
         "operator-arithmetic": {
             "match": "(\\+|\\-|\\/|\\*)",
-            "name": "keyword.operator.arithmetic.solidity"
+            "name": "keyword.operator.arithmetic.cellscript"
         },
         "operator-binary": {
             "match": "(\\^|\\&|\\||<<|>>)",
-            "name": "keyword.operator.binary.solidity"
+            "name": "keyword.operator.binary.cellscript"
         },
         "operator-assignment": {
             "match": "(\\:?=)",
-            "name": "keyword.operator.assignment.solidity"
+            "name": "keyword.operator.assignment.cellscript"
         },
         "control": {
             "patterns": [
@@ -221,37 +221,37 @@
         },
         "control-flow": {
             "match": "\\b(if|else|for|while|do|break|try|catch|continue|throw|returns?)\\b",
-            "name": "keyword.control.flow.solidity"
+            "name": "keyword.control.flow.cellscript"
         },
         "control-using": {
             "match": "\\b(using)\\b",
-            "name": "keyword.control.using.solidity"
+            "name": "keyword.control.using.cellscript"
         },
         "control-import": {
             "match": "\\b(import)\\b",
-            "name": "keyword.control.import.solidity"
+            "name": "keyword.control.import.cellscript"
         },
         "control-pragma": {
             "match": "\\b(pragma)(?:\\s+([A-Za-z_]\\w+)\\s+([^\\s]+))?\\b",
             "captures": {
                 "1": {
-                    "name": "keyword.control.pragma.solidity"
+                    "name": "keyword.control.pragma.cellscript"
                 },
                 "2": {
-                    "name": "entity.name.tag.pragma.solidity"
+                    "name": "entity.name.tag.pragma.cellscript"
                 },
                 "3": {
-                    "name": "constant.other.pragma.solidity"
+                    "name": "constant.other.pragma.cellscript"
                 }
             }
         },
         "control-underscore": {
             "match": "\\b(_)\\b",
-            "name": "constant.other.underscore.solidity"
+            "name": "constant.other.underscore.cellscript"
         },
         "control-other": {
             "match": "\\b(new|delete|emit)\\b",
-            "name": "keyword.control.solidity"
+            "name": "keyword.control.cellscript"
         },
         "constant": {
             "patterns": [
@@ -271,19 +271,19 @@
         },
         "constant-boolean": {
             "match": "\\b(true|false)\\b",
-            "name": "constant.language.boolean.solidity"
+            "name": "constant.language.boolean.cellscript"
         },
         "constant-time": {
             "match": "\\b(seconds|minutes|hours|days|weeks|years)\\b",
-            "name": "constant.language.time.solidity"
+            "name": "constant.language.time.cellscript"
         },
         "constant-currency": {
             "match": "\\b(ether|wei|finney|szabo)\\b",
-            "name": "constant.language.currency.solidity"
+            "name": "constant.language.currency.cellscript"
         },
         "constant-ucase": {
             "match": "\\b([A-Z0-9_]+)\\b",
-            "name": "constant.language.ucase.solidity"
+            "name": "constant.language.ucase.cellscript"
         },
         "number": {
             "patterns": [
@@ -297,21 +297,21 @@
         },
         "number-decimal": {
             "match": "\\b(\\d+(\\.\\d+)?)\\b",
-            "name": "constant.numeric.decimal.solidity"
+            "name": "constant.numeric.decimal.cellscript"
         },
         "number-hex": {
             "match": "\\b(0[xX][a-fA-F0-9]+)\\b",
-            "name": "constant.numeric.hexadecimal.solidity"
+            "name": "constant.numeric.hexadecimal.cellscript"
         },
         "string": {
             "patterns": [
                 {
                     "match": "\\\".*?\\\"",
-                    "name": "string.quoted.double.solidity"
+                    "name": "string.quoted.double.cellscript"
                 },
                 {
                     "match": "\\'.*?\\'",
-                    "name": "string.quoted.single.solidity"
+                    "name": "string.quoted.single.cellscript"
                 }
             ]
         },
@@ -324,7 +324,7 @@
         },
         "type-primitive": {
             "match": "\\b(address|string\\d*|bytes\\d*|int\\d*|uint\\d*|bool|hash\\d*|var)\\b",
-            "name": "support.type.primitive.solidity"
+            "name": "support.type.primitive.cellscript"
         },
         "global": {
             "patterns": [
@@ -341,23 +341,23 @@
                 
                 {
                     "match": "\\b(this)\\b",
-                    "name": "variable.language.this.solidity"
+                    "name": "variable.language.this.cellscript"
                 },
                 {
                     "match": "\\b(super)\\b",
-                    "name": "variable.language.super.solidity"
+                    "name": "variable.language.super.cellscript"
                 },
                 {
                     "match": "\\b(abi)\\b",
-                    "name": "variable.language.builtin.abi.solidity"
+                    "name": "variable.language.builtin.abi.cellscript"
                 },
                 {
                     "match": "\\b(tx\\.origin|tx\\.gasprice|msg\\.data|msg\\.sig|msg\\.value)\\b",
-                    "name": "variable.language.transaction.security.solidity"
+                    "name": "variable.language.transaction.security.cellscript"
                 },
                 {
                     "match": "\\b(msg\\.sender|msg|block|tx|now)\\b",
-                    "name": "variable.language.transaction.solidity"
+                    "name": "variable.language.transaction.cellscript"
                 }
             ]
         },
@@ -365,44 +365,41 @@
             "patterns": [
                 {
                     "match": "\\b(require|assert|revert)\\b",
-                    "name": "keyword.control.exceptions.solidity"
+                    "name": "keyword.control.exceptions.cellscript"
                 },
                 {
                     "match": "\\b(selfdestruct|suicide)\\b",
-                    "name": "keyword.control.contract.solidity"
+                    "name": "keyword.control.contract.cellscript"
                 },
                 {
                     "match": "\\b(addmod|mulmod|keccak256|sha256|sha3|ripemd160|ecrecover)\\b",
-                    "name": "support.function.math.solidity"
+                    "name": "support.function.math.cellscript"
                 },
                 {
                     "match": "\\b(blockhash|gasleft)\\b",
-                    "name": "variable.language.transaction.solidity"
+                    "name": "variable.language.transaction.cellscript"
                 },
                 {
                     "match": "\\b(type)\\b",
-                    "name": "variable.language.type.solidity"
+                    "name": "variable.language.type.cellscript"
                 },
                 {
                     "match": "\\b\\.(send|call|delegatecall|staticcall|callcode|creationCode|runtimeCode)\\b",
-                    "name": "support.function.transaction.security.solidity"
+                    "name": "support.function.transaction.security.cellscript"
                 },
                 {
                     "match": "\\b\\.(transfer)\\b",
-                    "name": "support.function.transaction.solidity"
+                    "name": "support.function.transaction.cellscript"
                 }
             ]
         },
         "declaration": {
             "patterns": [
                 {
-                    "include": "#declaration-contract"
-                },
-                {
                     "include": "#declaration-interface"
                 },
                 {
-                    "include": "#declaration-library"
+                    "include": "#declaration-package"
                 },
                 {  "include": "#declaration-visibility"},
                 {
@@ -413,9 +410,6 @@
                 },
                 {
                     "include": "#declaration-enum"
-                },
-                {
-                    "include": "#declaration-function-fallback"
                 },
                 {
                     "include": "#declaration-function-receive"
@@ -435,44 +429,25 @@
                 }
             ]
         },
-        "declaration-contract": {
-            "patterns": [
-                {
-                    "match": "\\b(contract)(\\s+([A-Za-z_]\\w*))?\\b",
-                    "captures": {
-                        "1": {
-                            "name": "storage.type.contract.solidity"
-                        },
-                        "3": {
-                            "name": "entity.name.type.contract.solidity"
-                        }
-                    }
-                },
-                {
-                    "match": "\\b(is)\\b",
-                    "name": "storage.modifier.is.solidity"
-                }
-            ]
-        },
         "declaration-interface": {
             "match": "\\b(interface)(\\s+([A-Za-z_]\\w*))?\\b",
             "captures": {
                 "1": {
-                    "name": "storage.type.interface.solidity"
+                    "name": "storage.type.interface.cellscript"
                 },
                 "3": {
-                    "name": "entity.name.type.interface.solidity"
+                    "name": "entity.name.type.interface.cellscript"
                 }
             }
         },
-        "declaration-library": {
-            "match": "\\b(library)(\\s+([A-Za-z_]\\w*))?\\b",
+        "declaration-package": {
+            "match": "\\b(package)(\\s+([A-Za-z_]\\w*))?\\b",
             "captures": {
                 "1": {
-                    "name": "storage.type.library.solidity"
+                    "name": "storage.type.package.cellscript"
                 },
                 "3": {
-                    "name": "entity.name.type.library.solidity"
+                    "name": "entity.name.type.package.cellscript"
                 }
             }
         },
@@ -480,10 +455,10 @@
             "match": "\\b(struct)(\\s+([A-Za-z_]\\w*))?\\b",
             "captures": {
                 "1": {
-                    "name": "storage.type.struct.solidity"
+                    "name": "storage.type.struct.cellscript"
                 },
                 "3": {
-                    "name": "entity.name.type.struct.solidity"
+                    "name": "entity.name.type.struct.cellscript"
                 }
             }
         },
@@ -491,10 +466,10 @@
             "match": "\\b(error|event)(\\s+([A-Za-z_]\\w*))?\\b",
             "captures": {
                 "1": {
-                    "name": "storage.type.event.solidity"
+                    "name": "storage.type.event.cellscript"
                 },
                 "3": {
-                    "name": "entity.name.type.event.solidity"
+                    "name": "entity.name.type.event.cellscript"
                 }
             }
         },
@@ -502,10 +477,10 @@
             "match": "\\b(enum)(\\s+([A-Za-z_]\\w*))?\\b",
             "captures": {
                 "1": {
-                    "name": "storage.type.enum.solidity"
+                    "name": "storage.type.enum.cellscript"
                 },
                 "3": {
-                    "name": "entity.name.type.enum.solidity"
+                    "name": "entity.name.type.enum.cellscript"
                 }
             }
         },
@@ -513,13 +488,13 @@
             "begin": "\\b(constructor)\\s*\\b",
             "beginCaptures": {
                 "1": {
-                    "name": "storage.type.constructor.solidity"
+                    "name": "storage.type.constructor.cellscript"
                 }
             },
             "end": "({)",
             "endCaptures": {
                 "1": {
-                    "name": "punctuation.block.solidity"
+                    "name": "punctuation.block.cellscript"
                 }
             },
             "patterns": [
@@ -529,28 +504,24 @@
                 
             ]
         },
-        "declaration-function-fallback": {
-            "match": "\\b(function|fallback)\\s*\\(\\s*\\)",
-            "name": "storage.type.function.fallback.solidity"
-        },
         "declaration-function-receive": {
             "match": "\\b(receive)\\s*\\(\\s*\\)",
-            "name": "storage.type.function.receive.solidity"
+            "name": "storage.type.function.receive.cellscript"
         },
         "declaration-function": {
             "begin": "\\b(function)\\s+([A-Za-z_]\\w*)\\b",
             "beginCaptures": {
                 "1": {
-                    "name": "storage.type.function.solidity"
+                    "name": "storage.type.function.cellscript"
                 },
                 "2": {
-                    "name": "entity.name.function.solidity"
+                    "name": "entity.name.function.cellscript"
                 }
             },
             "end": "({)",
             "endCaptures": {
                 "1": {
-                    "name": "punctuation.block.solidity"
+                    "name": "punctuation.block.cellscript"
                 }
             },
             "patterns": [
@@ -564,10 +535,10 @@
             "match": "\\b(modifier)(\\s+([A-Za-z_]\\w*))?\\b",
             "captures": {
                 "1": {
-                    "name": "storage.type.modifier.solidity"
+                    "name": "storage.type.modifier.cellscript"
                 },
                 "3": {
-                    "name": "entity.name.function.solidity"
+                    "name": "entity.name.function.cellscript"
                 }
             }
         },
@@ -575,17 +546,17 @@
             "patterns": [
                 {
                     "match": "\\b(private|internal|constant|immutable|pure|view|nonpayable|indexed)\\b",
-                    "name": "storage.type.modifier.keyword.solidity"
+                    "name": "storage.type.modifier.keyword.cellscript"
                 },
                 {
                     "match": "\\b(public|external|payable|inherited|storage|memory|calldata)\\b",
-                    "name": "storage.type.modifier.keyword.extendedscope.solidity"
+                    "name": "storage.type.modifier.keyword.extendedscope.cellscript"
                 }
             ]
         },
         "declaration-mapping": {
             "match": "\\b(mapping)\\b",
-            "name": "storage.type.mapping.solidity"
+            "name": "storage.type.mapping.cellscript"
         },
         "method-head": {
             "patterns": [
@@ -625,7 +596,7 @@
             "match": "\\b([A-Za-z_]\\w*)\\s*\\(",
             "captures": {
                 "1": {
-                    "name": "entity.name.function.solidity"
+                    "name": "entity.name.function.cellscript"
                 }
             }
         },
@@ -633,7 +604,7 @@
             "match": "\\b([A-Za-z_]\\w*)\\s*\\(",
             "captures": {
                 "1": {
-                    "name": "entity.name.modifier.solidity"
+                    "name": "entity.name.modifier.cellscript"
                 }
             }
         },
@@ -641,11 +612,11 @@
             "patterns": [
                 {
                     "match": "\\b(assembly)\\b",
-                    "name": "keyword.control.assembly.solidity"
+                    "name": "keyword.control.assembly.cellscript"
                 },
                 {
                     "match": "\\b(let)\\b",
-                    "name": "storage.type.assembly.solidity"
+                    "name": "storage.type.assembly.cellscript"
                 }
             ]
         },
@@ -653,7 +624,7 @@
             "patterns": [
                 {
                     "match": "\\b(unchecked)\\b",
-                    "name": "keyword.control.unchecked.solidity"
+                    "name": "keyword.control.unchecked.cellscript"
                 }
             ]
         },
@@ -661,27 +632,27 @@
             "patterns": [
                 {
                     "match": ";",
-                    "name": "punctuation.terminator.statement.solidity"
+                    "name": "punctuation.terminator.statement.cellscript"
                 },
                 {
                     "match": "\\.",
-                    "name": "punctuation.accessor.solidity"
+                    "name": "punctuation.accessor.cellscript"
                 },
                 {
                     "match": ",",
-                    "name": "punctuation.separator.solidity"
+                    "name": "punctuation.separator.cellscript"
                 },
                 {
                     "match": "({|})",
-                    "name": "punctuation.block.solidity"
+                    "name": "punctuation.block.cellscript"
                 }
             ]
         },
         "comment-todo": {
 			"match": "(?i)\\b(FIXME|TODO|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB|BUG|QUESTION|COMBAK|TEMP|SUPPRESS|LINT|\\w+-disable|\\w+-suppress)\\b(?-i)",
-			"name": "keyword.comment.todo.solidity"
+			"name": "keyword.comment.todo.cellscript"
 		}
     },
-    "scopeName": "source.solidity.security",
+    "scopeName": "source.cellscript.security",
     "uuid": "ad87d2cd-8575-4afe-984e-9421a3788933"
 }
