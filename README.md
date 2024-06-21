@@ -1,24 +1,18 @@
-[<img width="200" alt="get in touch with Consensys Diligence" src="https://user-images.githubusercontent.com/2865694/56826101-91dcf380-685b-11e9-937c-af49c2510aa0.png">](https://diligence.consensys.net)<br/>
-<sup>
-[[  🌐  ](https://diligence.consensys.net)  [  📩  ](mailto:diligence@consensys.net)  [  🔥  ](https://consensys.github.io/diligence/)]
-</sup><br/><br/>
-
-
 # CellScript Language Support, Syntax Highlighting, and Themes for VSCode
 
-This extension enables CellScript code highlighting for VSCode. It **only provides the language support** and themes, no active decoration or functionality. This is mainly to support CellScript code highlighting in VSCode Web/github.dev. Go install [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.cellscript-visual-auditor) instead if you want the fully blown super amazedazzle extension 🥰.
+This extension enables CellScript code highlighting for VSCode. It **only provides the language support** and themes, no active decoration or functionality. This is mainly to support CellScript code highlighting in VSCode Web/github.dev. Go install [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=cell-labs.cellscript-visual-auditor) instead if you want the fully blown super amazedazzle extension 🥰.
 
 
 
-This used to be inlined into [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.cellscript-visual-auditor) and unless you're installing this on VSCode Web you probably want to install [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.cellscript-visual-auditor) instead. However, breaking this out into its own extension allows us to be more flexible and provide a some support for VSCode Web /  https://github.dev.
+This used to be inlined into [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=cell-labs.cellscript-visual-auditor) and unless you're installing this on VSCode Web you probably want to install [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=cell-labs.cellscript-visual-auditor) instead. However, breaking this out into its own extension allows us to be more flexible and provide a some support for VSCode Web /  https://github.dev.
 
 What changed?
 
-* [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=tintinweb.cellscript-visual-auditor) now bundles with this extension to provide language support an themes.
+* [CellScript Visual Developer](https://marketplace.visualstudio.com/items?itemName=cell-labs.cellscript-visual-auditor) now bundles with this extension to provide language support an themes.
 * We can now provide minimal language support for VSCode-Web @ https://github.dev/.
 
 
-## Theme: CellScript Visual Developer Light (VSCode)
+# Theme: CellScript Visual Developer Light (VSCode)
 
 <img width="1364" alt="theme_light_vs" src="https://user-images.githubusercontent.com/2865694/61187576-6b1ca500-a673-11e9-8770-ff8b47d716ee.png">
 

@@ -1,11 +1,11 @@
 {
     "name": "vscode-cellscript-language",
-    "displayName": "CellScript Language & Themes (only)",
+    "displayName": "CellScript Language & Themes",
     "description": "CellScript Language Support, Syntax Highlighting, and Themes",
-    "publisher": "tintinweb",
+    "publisher": "CellScript",
     "icon": "images/icon.png",
     "preview": true,
-    "version": "0.0.7",
+    "version": "0.0.1",
     "engines": {
         "vscode": "^1.60.0"
     },
@@ -17,8 +17,6 @@
         "audit",
         "review",
         "developer",
-        "cellscript security",
-        "cellscript audit",
         "language",
         "theme"
     ],
@@ -26,11 +24,11 @@
         "Programming Languages"
     ],
     "bugs": {
-        "url": "https://github.com/tintinweb/vscode-cellscript-language/issues"
+        "url": "https://github.com/douyixuan/vscode-cellscript-language/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/tintinweb/vscode-cellscript-language"
+        "url": "https://github.com/douyixuan/vscode-cellscript-language"
     },
     "scripts": {
         "test": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. --extensionTestsPath=dist/web/test/suite/index.js",
